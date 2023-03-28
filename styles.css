@@ -144,3 +144,78 @@ a{
     color:black;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Default styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+/* Styles for small screens */
+@media screen and (max-width: 576px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+/* Styles for medium screens */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .item {
+    width: 45%;
+  }
+}
+
+/* Styles for large screens */
+@media screen and (min-width: 769px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .item {
+    width: 30%;
+  }
+}
